@@ -1,0 +1,657 @@
+Index: json_output/role.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/json_output/role.json b/json_output/role.json
+--- a/json_output/role.json	
++++ b/json_output/role.json	(date 1741565165952)
+@@ -1,34 +1,612 @@
+-[
+-{ "updateOne": { "filter": { "publicId": "0bc7b4e5-aa01-44d5-a114-8dc46e75c824" }, "update": { "$set": {"code": "Policy Analyst", "en_CA": "Policy Analyst", "fr_CA": "Analyste des politiques", "en_US": "Policy Analyst", "es_US": "Analista de Políticas", "es_MX": "Analista de Políticas", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "7641965e-ae83-4c1f-b126-a21a908bfa22" }, "update": { "$set": {"code": "System Architect", "en_CA": "System Architect", "fr_CA": "Architecte de systèmes", "en_US": "System Architect", "es_US": "Arquitecto de Sistemas", "es_MX": "Arquitecto de Sistemas", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "b80abae7-a9f5-474d-8e75-808739f25b01" }, "update": { "$set": {"code": "Cybersecurity Analyst", "en_CA": "Cybersecurity Analyst", "fr_CA": "Analyste en cybersécurité", "en_US": "Cybersecurity Analyst", "es_US": "Analista de Ciberseguridad", "es_MX": "Analista de Ciberseguridad", "retired": "TRUE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "c76751d4-3f79-43bb-b468-13305bc5185f" }, "update": { "$set": {"code": "QA Engineer", "en_CA": "QA Engineer", "fr_CA": "Ingénieur en assurance qualité", "en_US": "QA Engineer", "es_US": "Ingeniero de Control de Calidad", "es_MX": "Ingeniero de Control de Calidad", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "3473be84-999c-42af-aafa-23b36d3b59e1" }, "update": { "$set": {"code": "Actuary", "en_CA": "Actuary", "fr_CA": "Actuaire", "en_US": "Actuary", "es_US": "Actuario", "es_MX": "Actuario", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "ed7f3167-b49e-4e3e-8dcc-f9c4e32f21ce" }, "update": { "$set": {"code": "Automation Engineer", "en_CA": "Automation Engineer", "fr_CA": "Ingénieur en automatisation", "en_US": "Automation Engineer", "es_US": "Ingeniero de Automatización", "es_MX": "Ingeniero de Automatización", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "dab01602-1a19-4c7b-b665-afa1054f898b" }, "update": { "$set": {"code": "Data Analyst", "en_CA": "Data Analyst", "fr_CA": "Analyste de données", "en_US": "Data Analyst", "es_US": "Analista de Datos", "es_MX": "Analista de Datos", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "89dc866d-92e4-4504-a087-e0b87402600a" }, "update": { "$set": {"code": "Database Administrator", "en_CA": "Database Administrator", "fr_CA": "Administrateur de bases de données", "en_US": "Database Administrator", "es_US": "Administrador de Bases de Datos", "es_MX": "Administrador de Bases de Datos", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "90b1326d-fa73-4bf1-80f8-fb3a0187f9c8" }, "update": { "$set": {"code": "Incident Responder", "en_CA": "Incident Responder", "fr_CA": "Répondant aux incidents", "en_US": "Incident Responder", "es_US": "Especialista en Respuesta a Incidentes", "es_MX": "Especialista en Respuesta a Incidentes", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "28b8101c-e6f2-4018-8491-eedbd6e5d440" }, "update": { "$set": {"code": "Cloud Solutions Architect", "en_CA": "Cloud Solutions Architect", "fr_CA": "Architecte de solutions en nuage", "en_US": "Cloud Solutions Architect", "es_US": "Arquitecto de Soluciones en la Nube", "es_MX": "Arquitecto de Soluciones en la Nube", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "e5ebdfdd-0bc1-445e-9f76-b0edac37022d" }, "update": { "$set": {"code": "Software Developer", "en_CA": "Software Developer", "fr_CA": "Développeur de logiciels", "en_US": "Software Developer", "es_US": "Desarrollador de Software", "es_MX": "Desarrollador de Software", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "94a402b1-f03f-4711-a3c9-978a74353e94" }, "update": { "$set": {"code": "Customer Success Manager", "en_CA": "Customer Success Manager", "fr_CA": "Gestionnaire de la réussite client", "en_US": "Customer Success Manager", "es_US": "Gerente de Éxito del Cliente", "es_MX": "Gerente de Éxito del Cliente", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "0a20f55e-af33-4304-b9e3-986c970d0a30" }, "update": { "$set": {"code": "DevOps Engineer", "en_CA": "DevOps Engineer", "fr_CA": "Ingénieur DevOps", "en_US": "DevOps Engineer", "es_US": "Ingeniero de DevOps", "es_MX": "Ingeniero de DevOps", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "16571f12-b9e3-4103-9303-685be047b033" }, "update": { "$set": {"code": "Risk Manager", "en_CA": "Risk Manager", "fr_CA": "Gestionnaire des risques", "en_US": "Risk Manager", "es_US": "Gerente de Riesgos", "es_MX": "Gerente de Riesgos", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "325a4f55-8408-44bc-ba64-e41df282a261" }, "update": { "$set": {"code": "Security Consultant", "en_CA": "Security Consultant", "fr_CA": "Consultant en sécurité", "en_US": "Security Consultant", "es_US": "Consultor de Seguridad", "es_MX": "Consultor de Seguridad", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "ddf99346-bfa1-4676-91e4-f6a41ffefa85" }, "update": { "$set": {"code": "Underwriter", "en_CA": "Underwriter", "fr_CA": "Souscripteur d'assurance", "en_US": "Underwriter", "es_US": "Suscriptor de Seguros", "es_MX": "Suscriptor de Seguros", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "cba74225-ca33-46f9-a5f7-ddaf4b322e19" }, "update": { "$set": {"code": "Claims Adjuster", "en_CA": "Claims Adjuster", "fr_CA": "Expert en sinistres", "en_US": "Claims Adjuster", "es_US": "Perito de Seguros", "es_MX": "Perito de Seguros", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "5e0c71e0-e067-4e61-8549-5f888882d205" }, "update": { "$set": {"code": "Customer Support Specialist", "en_CA": "Customer Support Specialist", "fr_CA": "Spécialiste du support client", "en_US": "Customer Support Specialist", "es_US": "Especialista en Atención al Cliente", "es_MX": "Especialista en Atención al Cliente", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "38f14ea3-a651-4a52-a78c-74e388120856" }, "update": { "$set": {"code": "Operations Manager", "en_CA": "Operations Manager", "fr_CA": "Gestionnaire des opérations", "en_US": "Operations Manager", "es_US": "Gerente de Operaciones", "es_MX": "Gerente de Operaciones", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "5ebe3de7-3532-4c20-9800-3e4a45ca49fc" }, "update": { "$set": {"code": "IT Administrator", "en_CA": "IT Administrator", "fr_CA": "Administrateur TI", "en_US": "IT Administrator", "es_US": "Administrador de TI", "es_MX": "Administrador de TI", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "cde33f9f-3b72-4480-ad39-8134ceed1473" }, "update": { "$set": {"code": "AI Specialist", "en_CA": "AI Specialist", "fr_CA": "Spécialiste en intelligence artificielle", "en_US": "AI Specialist", "es_US": "Especialista en Inteligencia Artificial", "es_MX": "Especialista en Inteligencia Artificial", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "0d0b8bff-9e03-4f0b-b5b9-d19a47f8e8ea" }, "update": { "$set": {"code": "Fraud Investigator", "en_CA": "Fraud Investigator", "fr_CA": "Enquêteur en fraude", "en_US": "Fraud Investigator", "es_US": "Investigador de Fraudes", "es_MX": "Investigador de Fraudes", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "70ce3726-7034-4f40-8edd-72eef6faf2ab" }, "update": { "$set": {"code": "Business Analyst", "en_CA": "Business Analyst", "fr_CA": "Analyste d'affaires", "en_US": "Business Analyst", "es_US": "Analista de Negocios", "es_MX": "Analista de Negocios", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "2c239590-8e9a-4871-aaac-b17dbb72e380" }, "update": { "$set": {"code": "Support Manager", "en_CA": "Support Manager", "fr_CA": "Gestionnaire du support", "en_US": "Support Manager", "es_US": "Gerente de Soporte", "es_MX": "Gerente de Soporte", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "7bb2cf92-f484-4132-a4bb-885e7a00b7f9" }, "update": { "$set": {"code": "Compliance Officer", "en_CA": "Compliance Officer", "fr_CA": "Agent de conformité", "en_US": "Compliance Officer", "es_US": "Oficial de Cumplimiento", "es_MX": "Oficial de Cumplimiento", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "41f75079-6928-4e70-8c89-1b671f64b780" }, "update": { "$set": {"code": "Insurance Agent", "en_CA": "Insurance Agent", "fr_CA": "Agent d'assurance", "en_US": "Insurance Agent", "es_US": "Agente de Seguros", "es_MX": "Agente de Seguros", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "3e579903-b52d-47d4-871d-f91661867774" }, "update": { "$set": {"code": "Service Desk Analyst", "en_CA": "Service Desk Analyst", "fr_CA": "Analyste du centre de services", "en_US": "Service Desk Analyst", "es_US": "Analista de Mesa de Servicios", "es_MX": "Analista de Mesa de Servicios", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "ab965b2d-fd36-4f2c-a098-9f7b81d7bac0" }, "update": { "$set": {"code": "Technical Account Manager", "en_CA": "Technical Account Manager", "fr_CA": "Gestionnaire de comptes techniques", "en_US": "Technical Account Manager", "es_US": "Gerente de Cuentas Técnicas", "es_MX": "Gerente de Cuentas Técnicas", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "8278c8ea-3750-4ede-9188-ff8c15861421" }, "update": { "$set": {"code": "Help Desk Technician", "en_CA": "Help Desk Technician", "fr_CA": "Technicien du support technique", "en_US": "Help Desk Technician", "es_US": "Técnico de Soporte Técnico", "es_MX": "Técnico de Soporte Técnico", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "168688b7-e971-4dde-b756-c4f5a544623c" }, "update": { "$set": {"code": "Network Engineer", "en_CA": "Network Engineer", "fr_CA": "Ingénieur en réseaux", "en_US": "Network Engineer", "es_US": "Ingeniero de Redes", "es_MX": "Ingeniero de Redes", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "289cff83-751e-4d89-9d07-726a2a5348ce" }, "update": { "$set": {"code": "Product Manager", "en_CA": "Product Manager", "fr_CA": "Gestionnaire de produit", "en_US": "Product Manager", "es_US": "Gerente de Producto", "es_MX": "Gerente de Producto", "retired": "FALSE" } }, "upsert": true } },
+-{ "updateOne": { "filter": { "publicId": "8fe213ad-5d74-4774-a2cb-b6134228453f" }, "update": { "$set": {"code": "Tech Support Engineer", "en_CA": "Tech Support Engineer", "fr_CA": "Ingénieur en support technique", "en_US": "Tech Support Engineer", "es_US": "Ingeniero de Soporte Técnico", "es_MX": "Ingeniero de Soporte Técnico", "retired": "FALSE" } }, "upsert": true } }
+-]
+\ No newline at end of file
++{
++  "rows": [
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "0bc7b4e5-aa01-44d5-a114-8dc46e75c824"
++        },
++        "update": {
++          "$set": {
++            "code": "Policy Analyst",
++            "en_CA": "Policy Analyst",
++            "fr_CA": "Analyste des politiques",
++            "en_US": "Policy Analyst",
++            "es_US": "Analista de Políticas",
++            "es_MX": "Analista de Políticas",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "7641965e-ae83-4c1f-b126-a21a908bfa22"
++        },
++        "update": {
++          "$set": {
++            "code": "System Architect",
++            "en_CA": "System Architect",
++            "fr_CA": "Architecte de systèmes",
++            "en_US": "System Architect",
++            "es_US": "Arquitecto de Sistemas",
++            "es_MX": "Arquitecto de Sistemas",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "b80abae7-a9f5-474d-8e75-808739f25b01"
++        },
++        "update": {
++          "$set": {
++            "code": "Cybersecurity Analyst",
++            "en_CA": "Cybersecurity Analyst",
++            "fr_CA": "Analyste en cybersécurité",
++            "en_US": "Cybersecurity Analyst",
++            "es_US": "Analista de Ciberseguridad",
++            "es_MX": "Analista de Ciberseguridad",
++            "retired": "TRUE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "c76751d4-3f79-43bb-b468-13305bc5185f"
++        },
++        "update": {
++          "$set": {
++            "code": "QA Engineer",
++            "en_CA": "QA Engineer",
++            "fr_CA": "Ingénieur en assurance qualité",
++            "en_US": "QA Engineer",
++            "es_US": "Ingeniero de Control de Calidad",
++            "es_MX": "Ingeniero de Control de Calidad",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "3473be84-999c-42af-aafa-23b36d3b59e1"
++        },
++        "update": {
++          "$set": {
++            "code": "Actuary",
++            "en_CA": "Actuary",
++            "fr_CA": "Actuaire",
++            "en_US": "Actuary",
++            "es_US": "Actuario",
++            "es_MX": "Actuario",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "ed7f3167-b49e-4e3e-8dcc-f9c4e32f21ce"
++        },
++        "update": {
++          "$set": {
++            "code": "Automation Engineer",
++            "en_CA": "Automation Engineer",
++            "fr_CA": "Ingénieur en automatisation",
++            "en_US": "Automation Engineer",
++            "es_US": "Ingeniero de Automatización",
++            "es_MX": "Ingeniero de Automatización",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "dab01602-1a19-4c7b-b665-afa1054f898b"
++        },
++        "update": {
++          "$set": {
++            "code": "Data Analyst",
++            "en_CA": "Data Analyst",
++            "fr_CA": "Analyste de données",
++            "en_US": "Data Analyst",
++            "es_US": "Analista de Datos",
++            "es_MX": "Analista de Datos",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "89dc866d-92e4-4504-a087-e0b87402600a"
++        },
++        "update": {
++          "$set": {
++            "code": "Database Administrator",
++            "en_CA": "Database Administrator",
++            "fr_CA": "Administrateur de bases de données",
++            "en_US": "Database Administrator",
++            "es_US": "Administrador de Bases de Datos",
++            "es_MX": "Administrador de Bases de Datos",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "90b1326d-fa73-4bf1-80f8-fb3a0187f9c8"
++        },
++        "update": {
++          "$set": {
++            "code": "Incident Responder",
++            "en_CA": "Incident Responder",
++            "fr_CA": "Répondant aux incidents",
++            "en_US": "Incident Responder",
++            "es_US": "Especialista en Respuesta a Incidentes",
++            "es_MX": "Especialista en Respuesta a Incidentes",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "28b8101c-e6f2-4018-8491-eedbd6e5d440"
++        },
++        "update": {
++          "$set": {
++            "code": "Cloud Solutions Architect",
++            "en_CA": "Cloud Solutions Architect",
++            "fr_CA": "Architecte de solutions en nuage",
++            "en_US": "Cloud Solutions Architect",
++            "es_US": "Arquitecto de Soluciones en la Nube",
++            "es_MX": "Arquitecto de Soluciones en la Nube",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "e5ebdfdd-0bc1-445e-9f76-b0edac37022d"
++        },
++        "update": {
++          "$set": {
++            "code": "Software Developer",
++            "en_CA": "Software Developer",
++            "fr_CA": "Développeur de logiciels",
++            "en_US": "Software Developer",
++            "es_US": "Desarrollador de Software",
++            "es_MX": "Desarrollador de Software",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "94a402b1-f03f-4711-a3c9-978a74353e94"
++        },
++        "update": {
++          "$set": {
++            "code": "Customer Success Manager",
++            "en_CA": "Customer Success Manager",
++            "fr_CA": "Gestionnaire de la réussite client",
++            "en_US": "Customer Success Manager",
++            "es_US": "Gerente de Éxito del Cliente",
++            "es_MX": "Gerente de Éxito del Cliente",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "0a20f55e-af33-4304-b9e3-986c970d0a30"
++        },
++        "update": {
++          "$set": {
++            "code": "DevOps Engineer",
++            "en_CA": "DevOps Engineer",
++            "fr_CA": "Ingénieur DevOps",
++            "en_US": "DevOps Engineer",
++            "es_US": "Ingeniero de DevOps",
++            "es_MX": "Ingeniero de DevOps",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "16571f12-b9e3-4103-9303-685be047b033"
++        },
++        "update": {
++          "$set": {
++            "code": "Risk Manager",
++            "en_CA": "Risk Manager",
++            "fr_CA": "Gestionnaire des risques",
++            "en_US": "Risk Manager",
++            "es_US": "Gerente de Riesgos",
++            "es_MX": "Gerente de Riesgos",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "325a4f55-8408-44bc-ba64-e41df282a261"
++        },
++        "update": {
++          "$set": {
++            "code": "Security Consultant",
++            "en_CA": "Security Consultant",
++            "fr_CA": "Consultant en sécurité",
++            "en_US": "Security Consultant",
++            "es_US": "Consultor de Seguridad",
++            "es_MX": "Consultor de Seguridad",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "ddf99346-bfa1-4676-91e4-f6a41ffefa85"
++        },
++        "update": {
++          "$set": {
++            "code": "Underwriter",
++            "en_CA": "Underwriter",
++            "fr_CA": "Souscripteur d'assurance",
++            "en_US": "Underwriter",
++            "es_US": "Suscriptor de Seguros",
++            "es_MX": "Suscriptor de Seguros",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "cba74225-ca33-46f9-a5f7-ddaf4b322e19"
++        },
++        "update": {
++          "$set": {
++            "code": "Claims Adjuster",
++            "en_CA": "Claims Adjuster",
++            "fr_CA": "Expert en sinistres",
++            "en_US": "Claims Adjuster",
++            "es_US": "Perito de Seguros",
++            "es_MX": "Perito de Seguros",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "5e0c71e0-e067-4e61-8549-5f888882d205"
++        },
++        "update": {
++          "$set": {
++            "code": "Customer Support Specialist",
++            "en_CA": "Customer Support Specialist",
++            "fr_CA": "Spécialiste du support client",
++            "en_US": "Customer Support Specialist",
++            "es_US": "Especialista en Atención al Cliente",
++            "es_MX": "Especialista en Atención al Cliente",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "38f14ea3-a651-4a52-a78c-74e388120856"
++        },
++        "update": {
++          "$set": {
++            "code": "Operations Manager",
++            "en_CA": "Operations Manager",
++            "fr_CA": "Gestionnaire des opérations",
++            "en_US": "Operations Manager",
++            "es_US": "Gerente de Operaciones",
++            "es_MX": "Gerente de Operaciones",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "5ebe3de7-3532-4c20-9800-3e4a45ca49fc"
++        },
++        "update": {
++          "$set": {
++            "code": "IT Administrator",
++            "en_CA": "IT Administrator",
++            "fr_CA": "Administrateur TI",
++            "en_US": "IT Administrator",
++            "es_US": "Administrador de TI",
++            "es_MX": "Administrador de TI",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "cde33f9f-3b72-4480-ad39-8134ceed1473"
++        },
++        "update": {
++          "$set": {
++            "code": "AI Specialist",
++            "en_CA": "AI Specialist",
++            "fr_CA": "Spécialiste en intelligence artificielle",
++            "en_US": "AI Specialist",
++            "es_US": "Especialista en Inteligencia Artificial",
++            "es_MX": "Especialista en Inteligencia Artificial",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "0d0b8bff-9e03-4f0b-b5b9-d19a47f8e8ea"
++        },
++        "update": {
++          "$set": {
++            "code": "Fraud Investigator",
++            "en_CA": "Fraud Investigator",
++            "fr_CA": "Enquêteur en fraude",
++            "en_US": "Fraud Investigator",
++            "es_US": "Investigador de Fraudes",
++            "es_MX": "Investigador de Fraudes",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "70ce3726-7034-4f40-8edd-72eef6faf2ab"
++        },
++        "update": {
++          "$set": {
++            "code": "Business Analyst",
++            "en_CA": "Business Analyst",
++            "fr_CA": "Analyste d'affaires",
++            "en_US": "Business Analyst",
++            "es_US": "Analista de Negocios",
++            "es_MX": "Analista de Negocios",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "2c239590-8e9a-4871-aaac-b17dbb72e380"
++        },
++        "update": {
++          "$set": {
++            "code": "Support Manager",
++            "en_CA": "Support Manager",
++            "fr_CA": "Gestionnaire du support",
++            "en_US": "Support Manager",
++            "es_US": "Gerente de Soporte",
++            "es_MX": "Gerente de Soporte",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "7bb2cf92-f484-4132-a4bb-885e7a00b7f9"
++        },
++        "update": {
++          "$set": {
++            "code": "Compliance Officer",
++            "en_CA": "Compliance Officer",
++            "fr_CA": "Agent de conformité",
++            "en_US": "Compliance Officer",
++            "es_US": "Oficial de Cumplimiento",
++            "es_MX": "Oficial de Cumplimiento",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "41f75079-6928-4e70-8c89-1b671f64b780"
++        },
++        "update": {
++          "$set": {
++            "code": "Insurance Agent",
++            "en_CA": "Insurance Agent",
++            "fr_CA": "Agent d'assurance",
++            "en_US": "Insurance Agent",
++            "es_US": "Agente de Seguros",
++            "es_MX": "Agente de Seguros",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "3e579903-b52d-47d4-871d-f91661867774"
++        },
++        "update": {
++          "$set": {
++            "code": "Service Desk Analyst",
++            "en_CA": "Service Desk Analyst",
++            "fr_CA": "Analyste du centre de services",
++            "en_US": "Service Desk Analyst",
++            "es_US": "Analista de Mesa de Servicios",
++            "es_MX": "Analista de Mesa de Servicios",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "ab965b2d-fd36-4f2c-a098-9f7b81d7bac0"
++        },
++        "update": {
++          "$set": {
++            "code": "Technical Account Manager",
++            "en_CA": "Technical Account Manager",
++            "fr_CA": "Gestionnaire de comptes techniques",
++            "en_US": "Technical Account Manager",
++            "es_US": "Gerente de Cuentas Técnicas",
++            "es_MX": "Gerente de Cuentas Técnicas",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "8278c8ea-3750-4ede-9188-ff8c15861421"
++        },
++        "update": {
++          "$set": {
++            "code": "Help Desk Technician",
++            "en_CA": "Help Desk Technician",
++            "fr_CA": "Technicien du support technique",
++            "en_US": "Help Desk Technician",
++            "es_US": "Técnico de Soporte Técnico",
++            "es_MX": "Técnico de Soporte Técnico",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "168688b7-e971-4dde-b756-c4f5a544623c"
++        },
++        "update": {
++          "$set": {
++            "code": "Network Engineer",
++            "en_CA": "Network Engineer",
++            "fr_CA": "Ingénieur en réseaux",
++            "en_US": "Network Engineer",
++            "es_US": "Ingeniero de Redes",
++            "es_MX": "Ingeniero de Redes",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "289cff83-751e-4d89-9d07-726a2a5348ce"
++        },
++        "update": {
++          "$set": {
++            "code": "Product Manager",
++            "en_CA": "Product Manager",
++            "fr_CA": "Gestionnaire de produit",
++            "en_US": "Product Manager",
++            "es_US": "Gerente de Producto",
++            "es_MX": "Gerente de Producto",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    },
++    {
++      "updateOne": {
++        "filter": {
++          "publicId": "8fe213ad-5d74-4774-a2cb-b6134228453f"
++        },
++        "update": {
++          "$set": {
++            "code": "Tech Support Engineer",
++            "en_CA": "Tech Support Engineer",
++            "fr_CA": "Ingénieur en support technique",
++            "en_US": "Tech Support Engineer",
++            "es_US": "Ingeniero de Soporte Técnico",
++            "es_MX": "Ingeniero de Soporte Técnico",
++            "retired": "FALSE"
++          }
++        },
++        "upsert": true
++      }
++    }
++  ]
++}
+\ No newline at end of file

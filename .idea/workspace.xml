@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e43401e3-778b-42eb-b4b5-a75a7f89ff72" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="9d37582d-206d-4e3e-95d3-808f77a76c45" value="Green" />
+    </colors>
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bazarbozorg" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bazarbozorg" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2tYpTZ8V1NH9yeFnPFbnpd3HDOI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Gradle.AutoTypeListAttributeConverterTest.executor": "Run",
+    "Gradle.Build bazarbozorg.executor": "Run",
+    "Gradle.Build untitled.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.EnumCacheTest.executor": "Run",
+    "Gradle.EnumCacheTest.testDuplicateCodeThrowsException.executor": "Run",
+    "Gradle.EnumCacheTest.testLookupById_LocalTypeList.executor": "Run",
+    "Gradle.JsonSchemaValidatorTest.executor": "Debug",
+    "Gradle.JsonSchemaValidatorTest.testInvalidJson_NotAnArray.executor": "Run",
+    "Gradle.JsonValidationTest.executor": "Debug",
+    "Gradle.JsonValidationTest.testInvalidJson.executor": "Run",
+    "Gradle.JsonValidationTest.testMissingRequiredFields.executor": "Run",
+    "Gradle.JsonValidationTest.testValidJson.executor": "Run",
+    "Gradle.JsonValidationTest.testValidJson4lOCAL.executor": "Run",
+    "Gradle.JsonValidatorTest.executor": "Run",
+    "Gradle.Log4j2Test.executor": "Run",
+    "Gradle.LogbackTest (1).executor": "Run",
+    "Gradle.LogbackTest.executor": "Run",
+    "Gradle.LogbackTest.testLogLevelChange (1).executor": "Run",
+    "Gradle.LogbackTest.testLogLevelChange.executor": "Run",
+    "Gradle.LoggingTest.executor": "Run",
+    "Gradle.MongoDBJSONUpdaterServiceTest.executor": "Run",
+    "Gradle.MongoDBJSONUpdaterServiceTest.testReadJsonFile_InvalidJson.executor": "Debug",
+    "Gradle.MongoDBJSONUpdaterServiceTest.testReadJsonFile_validJson.executor": "Run",
+    "Gradle.MongoDbSpringIntegrationTest.executor": "Run",
+    "Gradle.MongoDbSpringIntegrationTest.test.executor": "Run",
+    "Gradle.MongoServiceTest.executor": "Run",
+    "Gradle.MongoServiceTest.testFindDocumentByPublicId_Found.executor": "Run",
+    "Gradle.MongoServiceTest.testFindDocumentByPublicId_NotFound.executor": "Run",
+    "Gradle.MyMongoIntegrationTest.executor": "Run",
+    "Gradle.MyMongoIntegrationTest.testMongoInteraction.executor": "Debug",
+    "Gradle.TypeListJsonValidationTest.executor": "Run",
+    "Gradle.TypeListTest.executor": "Run",
+    "Gradle.TypeListUtilTest.executor": "Run",
+    "Gradle.bazarbozorg [:com.bazarbozorg.precompile.CSVFolderToSQLGenerator.main()].executor": "Run",
+    "Gradle.bazarbozorg [:com.bazarbozorg.precompile.CsvToEnumGenerator.main()].executor": "Run",
+    "Gradle.bazarbozorg [:com.bazarbozorg.precompile.H2CSVToSQLGenerator.main()].executor": "Run",
+    "Gradle.bazarbozorg [:com.bazarbozorg.precompile.MongoCSVToJSONGenerator.main()].executor": "Run",
+    "Gradle.bazarbozorg [:com.bazarbozorg.precompile.OracleCSVToSQLGenerator.main()].executor": "Run",
+    "Gradle.bazarbozorg [:org.example.Main.main()].executor": "Run",
+    "Gradle.bazarbozorg [dependencies].executor": "Run",
+    "Gradle.bazarbozorg [test].executor": "Run",
+    "Gradle.untitled [:org.example.Main.main()].executor": "Run",
+    "HTTP Request.bazarbozorg-endpoints | #1.executor": "Run",
+    "JUnit.MongoServiceTest.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.Main (1).executor": "Run",
+    "Spring Boot.Main.executor": "Run",
+    "Spring Boot.WebApp.executor": "Debug",
+    "code.cleanup.on.save": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "extract.method.default.visibility": "private",
+    "git-widget-placeholder": "master",
+    "ignore.preview.features.used": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/IdeaProjects/bazarbozorg",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/yahya/IdeaProjects/bazarbozorg/src/main/untitled/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.6448276",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "Errors",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\bazarbozorg\src\test\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\bazarbozorg\src\main\resources\schemas" />
+      <recent name="C:\bazarbozorg\src\main\java\com\bazarbozorg" />
+      <recent name="C:\bazarbozorg\src\test\java\com" />
+      <recent name="C:\bazarbozorg\src\main\java\com\bazarbozorg\entity" />
+      <recent name="C:\bazarbozorg\typelists" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bazarbozorg.enums" />
+      <recent name="com.bazarbozorg.entity" />
+      <recent name="com.bazarbozorg.mongodb.service" />
+      <recent name="com" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.EnumCacheTest">
+    <configuration name="EnumCacheTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.bazarbozorg.core.EnumCacheTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MongoDBJSONUpdaterServiceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.bazarbozorg.core.MongoDBJSONUpdaterServiceTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MongoDBJSONUpdaterServiceTest.testReadJsonFile_InvalidJson" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.bazarbozorg.core.MongoDBJSONUpdaterServiceTest.testReadJsonFile_InvalidJson&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="MongoServiceTest.testFindDocumentByPublicId_Found" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;MongoServiceTest.testFindDocumentByPublicId_Found&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" value="-Djdk.instrument.traceUsage" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TypeListJsonValidationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.bazarbozorg.core.TypeListJsonValidationTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ShConfigurationType">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="false" />
+      <option name="INTERPRETER_PATH" value="$PROJECT_DIR$/../Windows/system32/cmd.exe" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="WebApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="com.bazarbozorg.bazarbozorg.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bazarbozorg.web.WebApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bazarbozorg.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.MongoServiceTest.testFindDocumentByPublicId_Found" />
+      <item itemvalue="Gradle.EnumCacheTest" />
+      <item itemvalue="Gradle.MongoDBJSONUpdaterServiceTest" />
+      <item itemvalue="Gradle.MongoDBJSONUpdaterServiceTest.testReadJsonFile_InvalidJson" />
+      <item itemvalue="Gradle.TypeListJsonValidationTest" />
+      <item itemvalue="Spring Boot.WebApp" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.EnumCacheTest" />
+        <item itemvalue="Spring Boot.WebApp" />
+        <item itemvalue="Gradle.TypeListJsonValidationTest" />
+        <item itemvalue="Gradle.MongoDBJSONUpdaterServiceTest.testReadJsonFile_InvalidJson" />
+        <item itemvalue="Gradle.MongoDBJSONUpdaterServiceTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.39" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.39" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="StructureViewState">
+    <option name="selectedTab" value="Logical" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e43401e3-778b-42eb-b4b5-a75a7f89ff72" name="Changes" comment="" />
+      <created>1740538889734</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740538889734</updated>
+      <workItem from="1740538891308" duration="832000" />
+      <workItem from="1740539738562" duration="2666000" />
+      <workItem from="1740611988663" duration="1175000" />
+      <workItem from="1740613188435" duration="884000" />
+      <workItem from="1740614096160" duration="70000" />
+      <workItem from="1740614197531" duration="271000" />
+      <workItem from="1740614479727" duration="38000" />
+      <workItem from="1740614543342" duration="150000" />
+      <workItem from="1740614823322" duration="975000" />
+      <workItem from="1740618612940" duration="817000" />
+      <workItem from="1740619454082" duration="441000" />
+      <workItem from="1740619907044" duration="166000" />
+      <workItem from="1740620085121" duration="287000" />
+      <workItem from="1740620382963" duration="832000" />
+      <workItem from="1740621232915" duration="651000" />
+      <workItem from="1740621944625" duration="417000" />
+      <workItem from="1740642898283" duration="185000" />
+      <workItem from="1740643091028" duration="149000" />
+      <workItem from="1740643379967" duration="175000" />
+      <workItem from="1740643563543" duration="762000" />
+      <workItem from="1740644338976" duration="139000" />
+      <workItem from="1740644486912" duration="658000" />
+      <workItem from="1740645156861" duration="370000" />
+      <workItem from="1740690735359" duration="88000" />
+      <workItem from="1740690831151" duration="128000" />
+      <workItem from="1740690969092" duration="35000" />
+      <workItem from="1740691380342" duration="101000" />
+      <workItem from="1740691489997" duration="425000" />
+      <workItem from="1740691965366" duration="529000" />
+      <workItem from="1740692508560" duration="110000" />
+      <workItem from="1740692627397" duration="90000" />
+      <workItem from="1740692726731" duration="161000" />
+      <workItem from="1740692967341" duration="4173000" />
+      <workItem from="1740701024565" duration="20186000" />
+      <workItem from="1740818084818" duration="91000" />
+      <workItem from="1740818186534" duration="19000" />
+      <workItem from="1740818215338" duration="1717000" />
+      <workItem from="1740820002252" duration="788000" />
+      <workItem from="1740862242420" duration="137000" />
+      <workItem from="1740862604905" duration="12443000" />
+      <workItem from="1740973281321" duration="836000" />
+      <workItem from="1740974185038" duration="3037000" />
+      <workItem from="1741037808904" duration="28521000" />
+      <workItem from="1741210938752" duration="2682000" />
+      <workItem from="1741213704108" duration="3789000" />
+      <workItem from="1741407046118" duration="29686000" />
+      <workItem from="1741568005826" duration="25411000" />
+      <workItem from="1741669671129" duration="4174000" />
+      <workItem from="1741712472466" duration="2845000" />
+      <workItem from="1741718338382" duration="33000" />
+      <workItem from="1741719099259" duration="1151000" />
+      <workItem from="1741725356603" duration="12000" />
+      <workItem from="1741730322230" duration="612000" />
+      <workItem from="1741889910322" duration="650000" />
+      <workItem from="1741892030100" duration="873000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/untitled/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$USER_HOME$/IdeaProjects/bbtypelist/src/main/java/com/bazarbozorg/loaddatabase/MongoCSVToJSONGenerator.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bazarbozorg/onstart/JsonSchemaValidator.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bazarbozorg/onstart/JsonSchemaValidator.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/bazarbozorg/onstart/JsonSchemaValidator.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="document.get(&quot;publicId&quot;)" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

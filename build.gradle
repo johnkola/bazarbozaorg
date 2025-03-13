@@ -1,0 +1,75 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.2.2'  // ✅ Latest Spring Boot version
+    id 'io.spring.dependency-management' version '1.1.4'  // ✅ Latest dependency management
+}
+
+group = 'com.bazarbozorg'
+version = '1.0.0'
+sourceCompatibility = '17'  // ✅ Ensuring compatibility with Java 17 (or later)
+
+repositories {
+    mavenCentral()  // ✅ Fetch latest dependencies from Maven Central
+}
+
+dependencies {
+    // ✅ Core Spring Boot Dependencies
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    //implementation 'org.springframework.boot:spring-boot-starter-webflux'  // ✅ Needed for reactive MongoDB
+    implementation 'org.springframework.boot:spring-boot-starter-graphql'  // ✅ GraphQL Support
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+
+    // ✅ JPA if using RDBMS (H2, PostgreSQL, MySQL)
+    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'  // ✅ Standard MongoDB support
+    //implementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'  // ✅ Reactive MongoDB support
+
+    // ✅ Hibernate & JPA
+    implementation 'org.hibernate.orm:hibernate-core'
+    implementation 'jakarta.persistence:jakarta.persistence-api:3.1.0'
+
+    // ✅ Logging (Log4j2 Async & JSON)
+    //implementation 'org.springframework.boot:spring-boot-starter-log4j2'
+    implementation "org.apache.logging.log4j:log4j-api:2.22.1"
+    implementation "org.apache.logging.log4j:log4j-core:2.22.1"
+    implementation "org.apache.logging.log4j:log4j-layout-template-json:2.22.1"
+    implementation "com.lmax:disruptor:3.4.4"  // ✅ Required for async logging
+
+    // ✅ JSON Processing & Validation
+    implementation "com.fasterxml.jackson.core:jackson-databind:2.16.1"  // ✅ Latest Jackson
+    implementation "com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.16.1"
+    implementation "com.networknt:json-schema-validator:1.0.83"  // ✅ Schema validation
+
+    // ✅ Swagger (Springdoc OpenAPI)
+    implementation "org.springdoc:springdoc-openapi-starter-webflux-ui:2.3.0"
+
+    // ✅ Lombok (Reduce Boilerplate Code)
+    implementation 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+
+    // ✅ Apache Commons for Utilities
+    implementation 'org.apache.commons:commons-csv:1.12.0'
+
+    // ✅ H2 Database (For Testing with JPA)
+    runtimeOnly "com.h2database:h2"
+
+    // ✅ DevTools (Disable in Production)
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+    // ✅ Testing Dependencies
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.graphql:spring-graphql-test'
+    testImplementation 'io.projectreactor:reactor-test'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api'
+    testImplementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'
+    // ✅ Test with Reactive MongoDB
+    testImplementation 'de.flapdoodle.embed:de.flapdoodle.embed.mongo'  // ✅ Embedded MongoDB for testing
+
+    // ✅ Mockito & Testing Utilities
+    testImplementation 'org.mockito:mockito-core:5.8.0'
+    testImplementation 'org.mockito:mockito-junit-jupiter:5.8.0'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}

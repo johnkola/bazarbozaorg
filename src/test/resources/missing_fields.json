@@ -1,0 +1,181 @@
+[
+  {
+    "updateOne": {
+      "update": {
+        "$set": {
+          "code": "en_CA",
+          "retired": "FALSE"
+        }
+      },
+      "upsert": true
+    }
+  },
+  {
+    "updateOne": {
+      "filter": {
+        "publicId": "872b181d-d0ce-48a2-8730-4961867d9e2c"
+      },
+      "update": {
+        "$set": {
+          "code": "fr_CA",
+          "retired": "FALSE"
+        }
+      },
+      "upsert": true
+    }
+  },
+  {
+    "updateOne": {
+      "filter": {
+        "publicId": "2ea4440c-8280-4c9d-b342-36412879940c"
+      },
+      "update": {
+        "$set": {
+          "code": "es_MX",
+          "retired": "FALSE"
+        }
+      },
+      "upsert": true
+    }
+  },
+  {
+    "updateOne": {
+      "filter": {
+        "publicId": "b76c1ba3-b3a5-4a44-8631-21a1a2cefaba"
+      },
+      "update": {
+        "$set": {
+          "code": "pt_BR",
+          "retired": "FALSE"
+        }
+      },
+      "upsert": true
+    }
+  },
+  {
+    "updateOne": {
+      "filter": {
+        "publicId": "68e4e64b-35ef-4d55-aea0-e07d4aa69f7e"
+      },
+      "update": {
+        "$set": {
+          "code": "en_US",
+          "retired": "FALSE"
+        }
+      },
+      "upsert": true
+    }
+  },
+  {
+    "updateOne": {
+      "filter": {
+        "publicId": "13fe32d5-165b-46d2-900f-4114d423d211"
+      },
+      "update": {
+        "$set": {
+          "code": "fr_FR",
+          "retired": "FALSE"
+        }
+      },
+      "upsert": true
+    }
+  },
+  {
+    "updateOne": {
+      "filter": {
+        "publicId": "ed9c378d-e552-40a2-90db-052ff4a2b424"
+      },
+      "update": {
+        "$set": {
+          "code": "de_DE",
+          "retired": "FALSE"
+        }
+      },
+      "upsert": true
+    }
+  },
+  {
+    "updateOne": {
+      "filter": {
+        "publicId": "64f16e96-de1c-492c-a009-8b1127b4f6be"
+      },
+      "update": {
+        "$set": {
+          "code": "it_IT",
+          "retired": "FALSE"
+        }
+      },
+      "upsert": true
+    }
+  },
+  {
+    "updateOne": {
+      "filter": {
+        "publicId": "3f877fd9-dd00-4c16-8220-09a25e98e20a"
+      },
+      "update": {
+        "$set": {
+          "code": "zh_CN",
+          "retired": "FALSE"
+        }
+      },
+      "upsert": true
+    }
+  },
+  {
+    "updateOne": {
+      "filter": {
+        "publicId": "c5069d36-7f1f-40cd-a65c-5205c00255c3"
+      },
+      "update": {
+        "$set": {
+          "code": "ja_JP",
+          "retired": "FALSE"
+        }
+      },
+      "upsert": true
+    }
+  },
+  {
+    "updateOne": {
+      "filter": {
+        "publicId": "edde0712-d9cb-438a-8f21-d4c9c697fcd3"
+      },
+      "update": {
+        "$set": {
+          "code": "fa_IR",
+          "retired": "FALSE"
+        }
+      },
+      "upsert": true
+    }
+  },
+  {
+    "updateOne": {
+      "filter": {
+        "publicId": "7b47b31e-e671-4218-8dde-5ef8dd91bf91"
+      },
+      "update": {
+        "$set": {
+          "code": "ar_SA",
+          "retired": "FALSE"
+        }
+      },
+      "upsert": true
+    }
+  },
+  {
+    "updateOne": {
+      "filter": {
+        "publicId": "29b7bebd-f9ce-450c-b7aa-21a3213673f6"
+      },
+      "update": {
+        "$set": {
+          "code": "tr_TR",
+          "retired": "FALSE"
+        }
+      },
+      "upsert": true
+    }
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "updateOne": {
+        "type": "object",
+        "properties": {
+          "filter": {
+            "type": "object",
+            "properties": {
+              "publicId": {
+                "type": "string",
+                "format": "uuid"
+              }
+            },
+            "required": [
+              "publicId"
+            ]
+          },
+          "update": {
+            "type": "object",
+            "properties": {
+              "$set": {
+                "type": "object",
+                "properties": {
+                  "code": {
+                    "type": "string"
+                  },
+                  "en_CA": {
+                    "type": "string"
+                  },
+                  "fr_CA": {
+                    "type": "string"
+                  },
+                  "en_US": {
+                    "type": "string"
+                  },
+                  "es_US": {
+                    "type": "string"
+                  },
+                  "es_MX": {
+                    "type": "string"
+                  },
+                  "retired": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "code",
+                  "retired"
+                ]
+              }
+            },
+            "required": [
+              "$set"
+            ]
+          },
+          "upsert": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "filter",
+          "update",
+          "upsert"
+        ]
+      }
+    },
+    "required": [
+      "updateOne"
+    ]
+  }
+}

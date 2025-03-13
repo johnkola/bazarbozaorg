@@ -1,0 +1,33 @@
+publicId,code,en_CA,fr_CA,en_US,es_US,es_MX,retired
+0bc7b4e5-aa01-44d5-a114-8dc46e75c824,Policy Analyst,Policy Analyst,Analyste des politiques,Policy Analyst,Analista de Políticas,Analista de Políticas,FALSE
+7641965e-ae83-4c1f-b126-a21a908bfa22,System Architect,System Architect,Architecte de systèmes,System Architect,Arquitecto de Sistemas,Arquitecto de Sistemas,FALSE
+b80abae7-a9f5-474d-8e75-808739f25b01,Cybersecurity Analyst,Cybersecurity Analyst,Analyste en cybersécurité,Cybersecurity Analyst,Analista de Ciberseguridad,Analista de Ciberseguridad,TRUE
+c76751d4-3f79-43bb-b468-13305bc5185f,QA Engineer,QA Engineer,Ingénieur en assurance qualité,QA Engineer,Ingeniero de Control de Calidad,Ingeniero de Control de Calidad,FALSE
+3473be84-999c-42af-aafa-23b36d3b59e1,Actuary,Actuary,Actuaire,Actuary,Actuario,Actuario,FALSE
+ed7f3167-b49e-4e3e-8dcc-f9c4e32f21ce,Automation Engineer,Automation Engineer,Ingénieur en automatisation,Automation Engineer,Ingeniero de Automatización,Ingeniero de Automatización,FALSE
+dab01602-1a19-4c7b-b665-afa1054f898b,Data Analyst,Data Analyst,Analyste de données,Data Analyst,Analista de Datos,Analista de Datos,FALSE
+89dc866d-92e4-4504-a087-e0b87402600a,Database Administrator,Database Administrator,Administrateur de bases de données,Database Administrator,Administrador de Bases de Datos,Administrador de Bases de Datos,FALSE
+90b1326d-fa73-4bf1-80f8-fb3a0187f9c8,Incident Responder,Incident Responder,Répondant aux incidents,Incident Responder,Especialista en Respuesta a Incidentes,Especialista en Respuesta a Incidentes,FALSE
+28b8101c-e6f2-4018-8491-eedbd6e5d440,Cloud Solutions Architect,Cloud Solutions Architect,Architecte de solutions en nuage,Cloud Solutions Architect,Arquitecto de Soluciones en la Nube,Arquitecto de Soluciones en la Nube,FALSE
+e5ebdfdd-0bc1-445e-9f76-b0edac37022d,Software Developer,Software Developer,Développeur de logiciels,Software Developer,Desarrollador de Software,Desarrollador de Software,FALSE
+94a402b1-f03f-4711-a3c9-978a74353e94,Customer Success Manager,Customer Success Manager,Gestionnaire de la réussite client,Customer Success Manager,Gerente de Éxito del Cliente,Gerente de Éxito del Cliente,FALSE
+0a20f55e-af33-4304-b9e3-986c970d0a30,DevOps Engineer,DevOps Engineer,Ingénieur DevOps,DevOps Engineer,Ingeniero de DevOps,Ingeniero de DevOps,FALSE
+16571f12-b9e3-4103-9303-685be047b033,Risk Manager,Risk Manager,Gestionnaire des risques,Risk Manager,Gerente de Riesgos,Gerente de Riesgos,FALSE
+325a4f55-8408-44bc-ba64-e41df282a261,Security Consultant,Security Consultant,Consultant en sécurité,Security Consultant,Consultor de Seguridad,Consultor de Seguridad,FALSE
+ddf99346-bfa1-4676-91e4-f6a41ffefa85,Underwriter,Underwriter,Souscripteur d'assurance,Underwriter,Suscriptor de Seguros,Suscriptor de Seguros,FALSE
+cba74225-ca33-46f9-a5f7-ddaf4b322e19,Claims Adjuster,Claims Adjuster,Expert en sinistres,Claims Adjuster,Perito de Seguros,Perito de Seguros,FALSE
+5e0c71e0-e067-4e61-8549-5f888882d205,Customer Support Specialist,Customer Support Specialist,Spécialiste du support client,Customer Support Specialist,Especialista en Atención al Cliente,Especialista en Atención al Cliente,FALSE
+38f14ea3-a651-4a52-a78c-74e388120856,Operations Manager,Operations Manager,Gestionnaire des opérations,Operations Manager,Gerente de Operaciones,Gerente de Operaciones,FALSE
+5ebe3de7-3532-4c20-9800-3e4a45ca49fc,IT Administrator,IT Administrator,Administrateur TI,IT Administrator,Administrador de TI,Administrador de TI,FALSE
+cde33f9f-3b72-4480-ad39-8134ceed1473,AI Specialist,AI Specialist,Spécialiste en intelligence artificielle,AI Specialist,Especialista en Inteligencia Artificial,Especialista en Inteligencia Artificial,FALSE
+0d0b8bff-9e03-4f0b-b5b9-d19a47f8e8ea,Fraud Investigator,Fraud Investigator,Enquêteur en fraude,Fraud Investigator,Investigador de Fraudes,Investigador de Fraudes,FALSE
+70ce3726-7034-4f40-8edd-72eef6faf2ab,Business Analyst,Business Analyst,Analyste d'affaires,Business Analyst,Analista de Negocios,Analista de Negocios,FALSE
+2c239590-8e9a-4871-aaac-b17dbb72e380,Support Manager,Support Manager,Gestionnaire du support,Support Manager,Gerente de Soporte,Gerente de Soporte,FALSE
+7bb2cf92-f484-4132-a4bb-885e7a00b7f9,Compliance Officer,Compliance Officer,Agent de conformité,Compliance Officer,Oficial de Cumplimiento,Oficial de Cumplimiento,FALSE
+41f75079-6928-4e70-8c89-1b671f64b780,Insurance Agent,Insurance Agent,Agent d'assurance,Insurance Agent,Agente de Seguros,Agente de Seguros,FALSE
+3e579903-b52d-47d4-871d-f91661867774,Service Desk Analyst,Service Desk Analyst,Analyste du centre de services,Service Desk Analyst,Analista de Mesa de Servicios,Analista de Mesa de Servicios,FALSE
+ab965b2d-fd36-4f2c-a098-9f7b81d7bac0,Technical Account Manager,Technical Account Manager,Gestionnaire de comptes techniques,Technical Account Manager,Gerente de Cuentas Técnicas,Gerente de Cuentas Técnicas,FALSE
+8278c8ea-3750-4ede-9188-ff8c15861421,Help Desk Technician,Help Desk Technician,Technicien du support technique,Help Desk Technician,Técnico de Soporte Técnico,Técnico de Soporte Técnico,FALSE
+168688b7-e971-4dde-b756-c4f5a544623c,Network Engineer,Network Engineer,Ingénieur en réseaux,Network Engineer,Ingeniero de Redes,Ingeniero de Redes,FALSE
+289cff83-751e-4d89-9d07-726a2a5348ce,Product Manager,Product Manager,Gestionnaire de produit,Product Manager,Gerente de Producto,Gerente de Producto,FALSE
+8fe213ad-5d74-4774-a2cb-b6134228453f,Tech Support Engineer,Tech Support Engineer,Ingénieur en support technique,Tech Support Engineer,Ingeniero de Soporte Técnico,Ingeniero de Soporte Técnico,FALSE
