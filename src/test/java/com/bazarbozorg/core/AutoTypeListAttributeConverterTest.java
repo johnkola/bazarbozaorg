@@ -1,8 +1,8 @@
 package com.bazarbozorg.core;
 
-import com.bazarbozorg.entity.User;
 import com.bazarbozorg.enums.AutoTypeListAttributeConverter;
 import com.bazarbozorg.enums.RoleTypeList;
+import com.bazarbozorg.model.User;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 

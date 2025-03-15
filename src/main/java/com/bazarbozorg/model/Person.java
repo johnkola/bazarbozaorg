@@ -1,26 +1,19 @@
-package com.bazarbozorg.entity;
+package com.bazarbozorg.model;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.Id;
+import com.bazarbozorg.model.types.GenderTypeList;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
+import lombok.*;
 
-enum Gender {
-    MALE,
-    FEMALE,
-    OTHER
-}
-
-//@Entity
-//@Table(name = "persons")
-//@Getter
-//@Setter
-//@NoArgsConstructor
-//@AllArgsConstructor
-//@Builder
+@Entity
+@Table(name = "persons")
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Person extends BasePojo {
 
     @NotBlank(message = "Name is required")
@@ -35,7 +28,7 @@ public class Person extends BasePojo {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private Gender gender;
+    private GenderTypeList gender;
     @Id
     private Long id;
 

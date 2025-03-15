@@ -1,7 +1,7 @@
-package com.bazarbozorg.entity;
+package com.bazarbozorg.model;
 
 import com.bazarbozorg.enums.AutoTypeListConverter;
-import com.bazarbozorg.enums.RoleTypeList;
+import com.bazarbozorg.model.types.RoleTypeList;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;

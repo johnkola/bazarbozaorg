@@ -42,10 +42,11 @@ spring:
     max-connection-life-time: 3600000  # ✅ Increase max connection life (ms) (1 hr)
     max-connection-idle-time: 900000  # ✅ Max idle time (ms) (15 min)
 
-springdoc:
-  swagger-ui:
-    enabled: false  # ❌ DISABLE in production for security
-  api-docs:
-    enabled: false  # ❌ DISABLE in production to avoid exposing API structure
-debug: true
 
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
+    tagsSorter: alpha

@@ -1,75 +1,176 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '3.2.2'  // ✅ Latest Spring Boot version
-    id 'io.spring.dependency-management' version '1.1.4'  // ✅ Latest dependency management
+    id 'org.springframework.boot' version '3.2.3'
+    id 'io.spring.dependency-management' version '1.1.4'
+    id 'war'
 }
 
 group = 'com.bazarbozorg'
 version = '1.0.0'
-sourceCompatibility = '17'  // ✅ Ensuring compatibility with Java 17 (or later)
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
 
 repositories {
-    mavenCentral()  // ✅ Fetch latest dependencies from Maven Central
+    mavenLocal() // For locally published artifacts
+    mavenCentral()
+    maven {
+        url = uri('https://jitpack.io')
+    }
+}
+
+// TypeList Generator Configuration
+def typeListGenConfig = [
+        sheetsFolder: "${layout.projectDirectory}/domain-types-xlsx",
+        outputFolder: "${layout.projectDirectory}/src/main/java",
+        packageName : "com.bazarbozorg.model.types"
+]
+
+// Create a separate JavaExec task for TypeList generation with specific main class
+tasks.register('executeTypeListGenerator', JavaExec) {
+    description = 'Executes TypeList Generator application'
+    group = 'build'
+
+    // Set max heap size to ensure enough memory
+    maxHeapSize = "512m"
+
+    // Configure classpath and main class
+    classpath = files() + configurations.runtimeClasspath
+
+    // Use specific main class
+    mainClass = 'com.bazarbozorg.generator.TypeListGeneratorApplication'
+
+    // Add program arguments
+    args = [
+            "--sheets-folder=${typeListGenConfig.sheetsFolder}",
+            "--output-folder-root=${typeListGenConfig.outputFolder}",
+            "--package-name=${typeListGenConfig.packageName}"
+    ]
+
+    // Configure standard output and error
+    standardOutput = System.out
+    errorOutput = System.err
+}
+
+// Create TypeList Generator Task
+tasks.register('generateTypeLists') {
+    description = 'Generates TypeList classes from CSV and Excel files'
+    group = 'build'
+
+    // Use the specific implementation with the known main class
+    dependsOn(tasks.named('executeTypeListGenerator'))
+
+    doLast {
+        logger.lifecycle("TypeList classes generated successfully")
+
+        // Verify that files were actually generated
+        def outputDir = new File(typeListGenConfig.outputFolder.toString())
+        def generatedFiles = outputDir.listFiles()
+
+        if (generatedFiles == null || generatedFiles.length == 0) {
+            logger.warn("WARNING: No files were generated in ${outputDir}")
+        } else {
+            logger.lifecycle("Generated ${generatedFiles.length} files:")
+            generatedFiles.each { file ->
+                logger.lifecycle("  - ${file.name}")
+            }
+        }
+    }
+}
+
+// Add generated sources to main source set
+sourceSets {
+    main {
+        java {
+            srcDir(typeListGenConfig.outputFolder)
+        }
+    }
+}
+
+// Make compileJava depend on generateTypeLists
+tasks.named('compileJava') {
+    dependsOn(tasks.named('generateTypeLists'))
+}
+
+configurations.configureEach {
+    // Force certain versions for security purposes
+    resolutionStrategy {
+        force 'org.apache.commons:commons-compress:1.26.1' // Fixes CVE-2024-25710 and CVE-2024-26308
+        force 'org.xmlunit:xmlunit-core:2.10.0' // Fixes CVE-2024-31573
+    }
 }
 
 dependencies {
-    // ✅ Core Spring Boot Dependencies
+    // Spring Boot Core
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    //implementation 'org.springframework.boot:spring-boot-starter-webflux'  // ✅ Needed for reactive MongoDB
-    implementation 'org.springframework.boot:spring-boot-starter-graphql'  // ✅ GraphQL Support
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
+    // JPA & Data Access
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
 
-    // ✅ JPA if using RDBMS (H2, PostgreSQL, MySQL)
-    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'  // ✅ Standard MongoDB support
-    //implementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'  // ✅ Reactive MongoDB support
+    // OpenAPI Documentation
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0'
 
-    // ✅ Hibernate & JPA
-    implementation 'org.hibernate.orm:hibernate-core'
-    implementation 'jakarta.persistence:jakarta.persistence-api:3.1.0'
+    // GraphQL Support
+    implementation 'org.springframework.boot:spring-boot-starter-graphql'
 
-    // ✅ Logging (Log4j2 Async & JSON)
-    //implementation 'org.springframework.boot:spring-boot-starter-log4j2'
-    implementation "org.apache.logging.log4j:log4j-api:2.22.1"
-    implementation "org.apache.logging.log4j:log4j-core:2.22.1"
-    implementation "org.apache.logging.log4j:log4j-layout-template-json:2.22.1"
-    implementation "com.lmax:disruptor:3.4.4"  // ✅ Required for async logging
+    // Lombok
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
 
-    // ✅ JSON Processing & Validation
-    implementation "com.fasterxml.jackson.core:jackson-databind:2.16.1"  // ✅ Latest Jackson
-    implementation "com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.16.1"
-    implementation "com.networknt:json-schema-validator:1.0.83"  // ✅ Schema validation
+    // Database Drivers
+    runtimeOnly 'com.h2database:h2:2.2.224' // For testing/development
+    runtimeOnly 'org.postgresql:postgresql:42.7.1' // Optional: For PostgreSQL support
 
-    // ✅ Swagger (Springdoc OpenAPI)
-    implementation "org.springdoc:springdoc-openapi-starter-webflux-ui:2.3.0"
+    // Apache POI (for Excel processing)
+    implementation 'org.apache.poi:poi:5.2.3'
+    implementation 'org.apache.poi:poi-ooxml:5.2.3'
 
-    // ✅ Lombok (Reduce Boilerplate Code)
-    implementation 'org.projectlombok:lombok'
-    annotationProcessor 'org.projectlombok:lombok'
+    // JSON Processing & Utility Libraries
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.16.1'
+    implementation 'org.apache.commons:commons-lang3:3.14.0'
+    implementation 'commons-io:commons-io:2.15.1'
 
-    // ✅ Apache Commons for Utilities
-    implementation 'org.apache.commons:commons-csv:1.12.0'
+    // TypeList Generator
+    implementation 'com.bazarbozorg.typelist.generator:bazarbozorg-core:1.0-SNAPSHOT'
+    implementation fileTree(
+            dir: System.getProperty('user.home') + '/.m2/repository/com/bazarbozorg/typelist/generator/bazarbozorg-core/1.0-SNAPSHOT',
+            include: ['*-all.jar']
+    )
 
-    // ✅ H2 Database (For Testing with JPA)
-    runtimeOnly "com.h2database:h2"
-
-    // ✅ DevTools (Disable in Production)
-    developmentOnly 'org.springframework.boot:spring-boot-devtools'
-
-    // ✅ Testing Dependencies
+    // Testing Dependencies
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.mockito:mockito-junit-jupiter'
+    testImplementation 'de.flapdoodle.embed:de.flapdoodle.embed.mongo:4.12.2'
     testImplementation 'org.springframework.graphql:spring-graphql-test'
-    testImplementation 'io.projectreactor:reactor-test'
-    testImplementation 'org.junit.jupiter:junit-jupiter-api'
-    testImplementation 'org.springframework.boot:spring-boot-starter-data-mongodb-reactive'
-    // ✅ Test with Reactive MongoDB
-    testImplementation 'de.flapdoodle.embed:de.flapdoodle.embed.mongo'  // ✅ Embedded MongoDB for testing
+}
 
-    // ✅ Mockito & Testing Utilities
-    testImplementation 'org.mockito:mockito-core:5.8.0'
-    testImplementation 'org.mockito:mockito-junit-jupiter:5.8.0'
+// For Spring Boot applications, we can use bootJar instead of war
+tasks.named('bootJar') {
+    archiveFileName = "${project.name}-${project.version}.jar"
+}
+
+// If you still need a WAR file for external deployment
+tasks.named('bootWar') {
+    enabled = true
+    archiveFileName = "${project.name}-${project.version}.war"
+}
+
+tasks.named('war') {
+    enabled = false // Disable the standard war task
 }
 
 tasks.named('test') {
     useJUnitPlatform()
+}
+
+// Add Spring Boot run task customizations
+bootRun {
+    // Enable live reload during development
+    systemProperty('spring.devtools.restart.enabled', 'true')
 }

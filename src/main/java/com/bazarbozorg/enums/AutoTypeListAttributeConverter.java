@@ -1,5 +1,7 @@
 package com.bazarbozorg.enums;
 
+import com.bazarbozorg.model.types.EnumCache;
+import com.bazarbozorg.model.types.TypeList;
 import jakarta.persistence.AttributeConverter;
 import jakarta.persistence.Converter;
 import lombok.Getter;

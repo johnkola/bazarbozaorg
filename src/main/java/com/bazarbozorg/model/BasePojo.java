@@ -1,13 +1,16 @@
-package com.bazarbozorg.entity;
+package com.bazarbozorg.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
-//@MappedSuperclass
-//@Data
-//@NoArgsConstructor
-//@AllArgsConstructor
+@MappedSuperclass
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 
 public abstract class BasePojo {
 
