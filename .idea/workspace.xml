@@ -5,35 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e43401e3-778b-42eb-b4b5-a75a7f89ff72" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain-types-xlsx/country.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain-types-xlsx/local.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain-types-xlsx/role.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain-types-xlsx/contactType.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain-types-xlsx/gender.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain-types-xlsx/permission.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/model/types/ContactTypeList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/model/types/ContacttypeTypeList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/model/types/CountryTypeList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/model/types/EnumCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/model/types/GenderTypeList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/model/types/LocalTypeList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/model/types/PermissionTypeList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/model/types/RoleTypeList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/model/types/TypeList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/mongodb/BaseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/entity/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/model/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/entity/BasePojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/model/BasePojo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/entity/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/model/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/entity/ContactInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/model/ContactInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/enums/AutoTypeListAttributeConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/enums/AutoTypeListAttributeConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/enums/EnumCache.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/enums/LocalTypeList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/enums/RoleTypeList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/enums/TypeList.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/mongodb/MongoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/mongodb/MongoConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/mongodb/repository/BaseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/onstart/MongoDBJSONUpdaterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/onstart/MongoDBJSONUpdaterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/onstart/MongoDBUpdaterRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/onstart/MongoDBUpdaterRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/service/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/mongodb/BaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/service/MongoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/mongodb/MongoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/web/controller/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/web/controller/controller/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/web/controller/controller/MongoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bazarbozorg/web/controller/controller/MongoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/bazarbozorg/core/AutoTypeListAttributeConverterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bazarbozorg/core/AutoTypeListAttributeConverterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/bazarbozorg/core/EnumCacheTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bazarbozorg/core/EnumCacheTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/typelists/local.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/typelists/role.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bazarbozorg/core/TypeListEnumUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bazarbozorg/core/TypeListEnumUtilTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +61,17 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="bazarbozorg" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bazarbozorg" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="bazarbozorg" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -100,6 +110,9 @@
     &quot;accountId&quot;: &quot;7fb83055-d54a-48fc-a357-d6eef828d047&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/resources/application.yml" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="OptimizeOnSaveOptions">
     <option name="myRunOnSave" value="true" />
   </component>
@@ -160,6 +173,7 @@
     &quot;Gradle.bazarbozorg [:com.bazarbozorg.precompile.MongoCSVToJSONGenerator.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.bazarbozorg [:com.bazarbozorg.precompile.OracleCSVToSQLGenerator.main()].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.bazarbozorg [:org.example.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.bazarbozorg [bootJar].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.bazarbozorg [bootRun --args='--spring.profiles.active=dev'].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.bazarbozorg [compileJava].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.bazarbozorg [dependencies].executor&quot;: &quot;Run&quot;,
@@ -202,11 +216,11 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/yahya/IdeaProjects/bazarbozorg/src/main/untitled/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.6448276&quot;,
     &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -233,31 +247,7 @@
       <recent name="com" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.bazarbozorg [generateTypeLists]">
-    <configuration name="EnumCacheTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.bazarbozorg.core.EnumCacheTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.WebApp">
     <configuration name="MongoServiceTest.testFindDocumentByPublicId_Found" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -282,29 +272,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="bazarbozorg [executeTypeListDirectly]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="executeTypeListDirectly" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="bazarbozorg [executeTypeListGenerator]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="bazarbozorg [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -315,7 +283,29 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="executeTypeListGenerator" />
+            <option value="bootJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="bazarbozorg [compileJava]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="compileJava" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -331,7 +321,7 @@
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -370,6 +360,28 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="bazarbozorg [war]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="war" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="ShConfigurationType">
       <option name="SCRIPT_TEXT" value="" />
       <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
@@ -394,20 +406,20 @@
     </configuration>
     <list>
       <item itemvalue="Gradle.MongoServiceTest.testFindDocumentByPublicId_Found" />
-      <item itemvalue="Gradle.bazarbozorg [executeTypeListGenerator]" />
+      <item itemvalue="Gradle.bazarbozorg [compileJava]" />
+      <item itemvalue="Gradle.bazarbozorg [war]" />
+      <item itemvalue="Gradle.bazarbozorg [bootJar]" />
       <item itemvalue="Gradle.bazarbozorg [generateTypeLists]" />
-      <item itemvalue="Gradle.bazarbozorg [executeTypeListDirectly]" />
       <item itemvalue="Gradle.bazarbozorg [inspectTypeListGeneratorJar]" />
-      <item itemvalue="Gradle.EnumCacheTest" />
       <item itemvalue="Spring Boot.WebApp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.bazarbozorg [war]" />
+        <item itemvalue="Gradle.bazarbozorg [compileJava]" />
         <item itemvalue="Gradle.bazarbozorg [generateTypeLists]" />
+        <item itemvalue="Gradle.bazarbozorg [bootJar]" />
         <item itemvalue="Gradle.bazarbozorg [inspectTypeListGeneratorJar]" />
-        <item itemvalue="Gradle.bazarbozorg [executeTypeListGenerator]" />
-        <item itemvalue="Gradle.bazarbozorg [executeTypeListDirectly]" />
-        <item itemvalue="Gradle.EnumCacheTest" />
       </list>
     </recent_temporary>
   </component>
@@ -486,7 +498,8 @@
       <workItem from="1741889910322" duration="650000" />
       <workItem from="1741892030100" duration="3164000" />
       <workItem from="1741980203490" duration="16250000" />
-      <workItem from="1742059370591" duration="1905000" />
+      <workItem from="1742059370591" duration="3335000" />
+      <workItem from="1742070101827" duration="3879000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -496,7 +509,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741893376223</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1742061365436</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1742061365436</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

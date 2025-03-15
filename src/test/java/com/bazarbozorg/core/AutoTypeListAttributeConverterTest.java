@@ -1,8 +1,8 @@
 package com.bazarbozorg.core;
 
 import com.bazarbozorg.enums.AutoTypeListAttributeConverter;
-import com.bazarbozorg.enums.RoleTypeList;
 import com.bazarbozorg.model.User;
+import com.bazarbozorg.model.types.RoleTypeList;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -22,17 +22,17 @@ public class AutoTypeListAttributeConverterTest {
 
     @Test
     void testConvertToDatabaseColumn() {
-        UUID dbData = roleConverter.convertToDatabaseColumn(RoleTypeList.SystemArchitect);
+        UUID dbData = roleConverter.convertToDatabaseColumn(RoleTypeList.SYSTEM_ARCHITECT);
         assertNotNull(dbData);
-        assertEquals(RoleTypeList.SystemArchitect.getId(), dbData);
+        assertEquals(RoleTypeList.SYSTEM_ARCHITECT.getId(), dbData);
     }
 
     @Test
     void testConvertToEntityAttribute() {
-        UUID id = RoleTypeList.SystemArchitect.getId();
+        UUID id = RoleTypeList.SYSTEM_ARCHITECT.getId();
         RoleTypeList role = roleConverter.convertToEntityAttribute(id);
         assertNotNull(role);
-        assertEquals(RoleTypeList.SystemArchitect, role);
+        assertEquals(RoleTypeList.SYSTEM_ARCHITECT, role);
     }
 
     @Test

@@ -1,6 +1,6 @@
 package com.bazarbozorg.web.controller.controller;
 
-import com.bazarbozorg.service.BaseService;
+import com.bazarbozorg.mongodb.BaseService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

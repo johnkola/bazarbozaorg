@@ -1,7 +1,7 @@
 package com.bazarbozorg.web.controller.controller;
 
 
-import com.bazarbozorg.service.MongoService;
+import com.bazarbozorg.mongodb.MongoService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.bson.Document;

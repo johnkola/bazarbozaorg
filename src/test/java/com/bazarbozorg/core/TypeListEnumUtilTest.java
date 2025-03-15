@@ -1,8 +1,9 @@
 package com.bazarbozorg.core;
 
-import com.bazarbozorg.enums.LocalTypeList;
-import com.bazarbozorg.enums.RoleTypeList;
-import com.bazarbozorg.enums.TypeList;
+
+import com.bazarbozorg.model.types.LocalTypeList;
+import com.bazarbozorg.model.types.RoleTypeList;
+import com.bazarbozorg.model.types.TypeList;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -26,28 +27,28 @@ public class TypeListEnumUtilTest {
     void testRegisterAndLookupById_LocalTypeList() {
         LocalTypeList locale = TypeList.fromId(LocalTypeList.class, VALID_UUID_LOCAL);
         assertNotNull(locale);
-        assertEquals(LocalTypeList.EnCa, locale);
+        assertEquals(LocalTypeList.EN_CA, locale);
     }
 
     @Test
     void testRegisterAndLookupByCode_LocalTypeList() {
         LocalTypeList locale = TypeList.fromCode(LocalTypeList.class, "en_CA");
         assertNotNull(locale);
-        assertEquals(LocalTypeList.EnCa, locale);
+        assertEquals(LocalTypeList.EN_CA, locale);
     }
 
     @Test
     void testRegisterAndLookupById_RoleTypeList() {
         RoleTypeList role = TypeList.fromId(RoleTypeList.class, VALID_UUID_ROLE);
         assertNotNull(role);
-        assertEquals(RoleTypeList.SystemArchitect, role);
+        assertEquals(RoleTypeList.SYSTEM_ARCHITECT, role);
     }
 
     @Test
     void testRegisterAndLookupByCode_RoleTypeList() {
         RoleTypeList role = TypeList.fromCode(RoleTypeList.class, "System Architect");
         assertNotNull(role);
-        assertEquals(RoleTypeList.SystemArchitect, role);
+        assertEquals(RoleTypeList.SYSTEM_ARCHITECT, role);
     }
 
     @Test

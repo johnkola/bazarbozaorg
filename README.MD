@@ -6,7 +6,7 @@ A Spring Boot web application that uses TypeList Generator for code generation d
 
 - RESTful API endpoints with OpenAPI/Swagger documentation
 - GraphQL support for flexible data querying
-- TypeList Generator integration for enum class generation from CSV/Excel files
+- TypeList Generator integration for enum class generation from Excel files
 - MongoDB and JPA/Hibernate support
 - Structured logging with Logback and Logstash encoder
 
@@ -52,16 +52,16 @@ cd your-repo-name
 
 The application includes Swagger/OpenAPI for API documentation:
 
-- Swagger UI: http://localhost:8080/api/swagger-ui.html
-- OpenAPI JSON: http://localhost:8080/api/api-docs
-- OpenAPI YAML: http://localhost:8080/api/api-docs.yaml
+- Swagger UI: http://localhost:8081/swagger-ui.html
+- OpenAPI JSON: http://localhost:8081/api-docs
+- OpenAPI YAML: http://localhost:8081/api-docs.yaml
 
 ## GraphQL Support
 
 GraphQL is available at:
 
-- GraphQL endpoint: http://localhost:8080/api/graphql
-- GraphiQL UI (if enabled): http://localhost:8080/api/graphiql
+- GraphQL endpoint: http://localhost:8081/graphql
+- GraphiQL UI (if enabled): http://localhost:8081/graphiql
 
 ## Type Lists
 
@@ -92,7 +92,7 @@ project-root/
 │   │   │           └── service/         # Business logic
 │   │   └── resources/
 │   │       ├── domain-types-xlsx/       # Place Excel files here
-│   │       ├── application.properties   # Application configuration
+│   │       ├── application.yml          # Application configuration
 │   │       └── logback-spring.xml       # Logging configuration
 │   └── test/
 │       └── java/
@@ -172,31 +172,16 @@ git branch -a
 ### TypeList Generator Tasks
 
 ```bash
-# Generate TypeList classes (using the "-all" JAR directly)
-./gradlew executeTypeListDirectly
-
-# Standard generation of TypeList classes
+# Generate TypeList classes
 ./gradlew generateTypeLists
 
-# Regenerate TypeList classes (cleans output directory first)
-./gradlew regenerateTypeLists
-
-# Inspect the TypeList Generator JAR to find main classes
-./gradlew inspectTypeListGeneratorJar
-
-# Try all possible main class paths to find a working one
-./gradlew tryAllPossibleMainClasses
-
-# Print Java environment information for troubleshooting
-./gradlew printJavaInfo
+# Execute TypeList generator directly
+./gradlew executeTypeListGenerator
 ```
 
 ### Application Specific
 
 ```bash
-# Verify TypeList Generator dependency
-./gradlew verifyDependencies
-
 # Run the application
 ./gradlew bootRun
 
@@ -212,35 +197,27 @@ git branch -a
 
 ## Troubleshooting
 
-### TypeList Generator Not Found
+### MongoDB Connection Issues
 
-If you encounter `Could not find com.bazarbozorg.typelist.generator:bazarbozorg-core:1.0-SNAPSHOT`:
+If you encounter MongoDB connection problems:
 
-1. Ensure the TypeList Generator project is built and published to your local Maven repository
-2. Run `./gradlew verifyDependencies` to check if the dependency is found
-3. Verify that mavenLocal() is in your repositories section
-4. Run `./gradlew --refresh-dependencies`
+1. Verify MongoDB is running on localhost:27017
+2. Check your MongoDB credentials if authentication is enabled
+3. Review the application.yml MongoDB configuration
+4. Look for MongoDB-related errors in the application logs
 
-### TypeList Generator Execution Failed
+### TypeList Generator Issues
 
-If you see `Execution failed for task ':executeTypeListGenerator'`:
+If you encounter problems with the TypeList generator:
 
-1. Try the direct execution approach: `./gradlew executeTypeListDirectly`
-2. Inspect the JAR file to find the correct main class: `./gradlew inspectTypeListGeneratorJar`
-3. Try different main class paths: `./gradlew tryAllPossibleMainClasses`
-4. Check your Java environment: `./gradlew printJavaInfo`
-
-### Validation Dependency Missing
-
-If you see errors about missing `jakarta.validation.constraints` packages:
-
-1. Make sure you have `spring-boot-starter-validation` in your dependencies
-2. Run `./gradlew --refresh-dependencies`
+1. Ensure the TypeList Generator project is properly published to your local Maven repository
+2. Check that your Excel files are in the correct format
+3. Verify file paths in your application.yml configuration
 
 ### OpenAPI/Swagger Not Working
 
 If Swagger UI is not accessible:
 
 1. Verify the application is running correctly
-2. Check that the path is correct: http://localhost:8080/api/swagger-ui.html
-3. Ensure SpringDoc OpenAPI dependency is in your build.gradle
+2. Check that the port is correct (8081 by default)
+3. Ensure the paths in springdoc configuration match your access URLs

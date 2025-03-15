@@ -1,6 +1,5 @@
-package com.bazarbozorg.service;
+package com.bazarbozorg.mongodb;
 
-import com.bazarbozorg.mongodb.repository.BaseRepository;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
@@ -11,8 +10,8 @@ import java.util.UUID;
 
 public abstract class BaseService<T> {
 
-    protected BaseRepository<T> repository;
-    protected MongoClient mongoClient; // ✅ Injected MongoClient for raw queries
+    protected final BaseRepository<T> repository;
+    protected final MongoClient mongoClient;
 
     public BaseService(BaseRepository<T> repository, MongoClient mongoClient) {
         this.repository = repository;
@@ -35,9 +34,12 @@ public abstract class BaseService<T> {
         repository.deleteById(id);
     }
 
-    // ✅ Example of Raw MongoDB Query (if needed)
     public MongoCollection<T> getMongoCollection(String collectionName, Class<T> clazz) {
-        MongoDatabase database = mongoClient.getDatabase("yourDatabase"); // ✅ Use the correct DB name
+        MongoDatabase database = mongoClient.getDatabase(getDatabaseName());
         return database.getCollection(collectionName, clazz);
+    }
+
+    private String getDatabaseName() {
+        return mongoClient.listDatabaseNames().first(); // Get first available database dynamically
     }
 }

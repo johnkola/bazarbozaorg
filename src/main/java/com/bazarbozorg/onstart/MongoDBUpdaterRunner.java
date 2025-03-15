@@ -4,11 +4,9 @@ import com.bazarbozorg.logging.CustomLoggerFactory;
 import org.slf4j.Logger;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
-import org.springframework.core.annotation.Order;
-import org.springframework.stereotype.Component;
 
-@Component
-@Order(1) // Ensures this runs before other startup tasks
+//@Component
+//@Order(1) // Ensures this runs before other startup tasks
 public class MongoDBUpdaterRunner implements ApplicationRunner {
 
 
